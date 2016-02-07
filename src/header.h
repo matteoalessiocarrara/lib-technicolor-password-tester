@@ -17,8 +17,8 @@
  * MA 02110-1301, USA.
  */
 
-# ifndef HEADER_H
-# define HEADER_H
+# ifndef LIB_TPT_HEADER_H
+# define LIB_TPT_HEADER_H
 
 /* La lunghezza della password senza considerare eventuali \n alla fine */
 # define PASS_LEN 10
