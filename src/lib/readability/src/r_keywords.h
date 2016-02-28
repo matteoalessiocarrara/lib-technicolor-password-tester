@@ -16,16 +16,13 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  */
- 
-/* DEPRECATED Questo file verrà rimosso nella prossima versione, è mantenuto solo
- * per compatibilità con la versione 1.x.x
- */ 
 
-# ifndef LIB_TPT_HEADER_H
-# define LIB_TPT_HEADER_H
+# ifndef READABILITY_KEYWORDS_H
+# define READABILITY_KEYWORDS_H
 
 
-# include "filter_str.h"
+typedef char * str;
+typedef char byte;
 
 
-# endif /* ifndef LIB_TPT_HEADER_H */
+# endif /* READABILITY_KEYWORDS_H */

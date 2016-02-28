@@ -16,16 +16,18 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  */
- 
-/* DEPRECATED Questo file verrà rimosso nella prossima versione, è mantenuto solo
- * per compatibilità con la versione 1.x.x
- */ 
 
-# ifndef LIB_TPT_HEADER_H
-# define LIB_TPT_HEADER_H
+/* Header a proposito della password rappresentata come stringa */
+
+# include <stdbool.h>
 
 
-# include "filter_str.h"
+# ifndef LIB_TPT_HEADER_STR_H
+# define LIB_TPT_HEADER_STR_H
+
+
+/* La lunghezza della password senza considerare eventuali \n alla fine */
+# define PASS_LEN 10
 
 
 # endif /* ifndef LIB_TPT_HEADER_H */

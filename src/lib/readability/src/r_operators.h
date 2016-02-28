@@ -16,16 +16,33 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  */
- 
-/* DEPRECATED Questo file verrà rimosso nella prossima versione, è mantenuto solo
- * per compatibilità con la versione 1.x.x
- */ 
 
-# ifndef LIB_TPT_HEADER_H
-# define LIB_TPT_HEADER_H
+# ifndef READABILITY_OPERATORS_H
+# define READABILITY_OPERATORS_H
 
 
-# include "filter_str.h"
+/* Boolean logic */
+# define and &&
+# define not !
+# define or ||
+# define xor ^
+
+/* Equality testing */
+# define is ==
+# define is_not !=
+
+/* DEPRECATED */
+# define isnot is_not
+
+/* Order relations */
+# define less <
+# define more >
+# define lessoris <=
+# define moreoris >=
+
+/* Bitwise shifts */
+# define shiftleft <<
+# define shiftright >>
 
 
-# endif /* ifndef LIB_TPT_HEADER_H */
+# endif /* READABILITY_OPERATORS_H */

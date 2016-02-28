@@ -1,19 +1,25 @@
 # Technicolor Password Tester #
 
-Controlla se una stringa è una password valida per router technicolor. Libreria in c.
+Controlla se una password è valida per i router technicolor. Libreria in c.
 
 ## Sinossi ##
 
 ```c
-# include "src/filter.c"
+# include "src/filter_str.c"
+# include "src/filter_int.c"
 
-extern inline bool is_valid_pass(char * pass);
+inline bool is_valid_pass_str(const char * pass);
+inline bool is_valid_pass_int(const uint64_t pass);
 ```
 
 ## Descrizione ##
 
-La funzione is_valid_pass() controlla se la stringa pass è una password valida
+Le funzioni is_valid_pass_qualcosa() controllano se pass è una password valida
 per i router technicolor.
+
+La funzione is_valid_pass_int() prende in input una password rappresentata come
+numero, per es 0xABCDEF1234; mentre l'altra funzione prende in input stringhe,
+come "ABCDEF1234".
 
 La stringa pass *dovrebbe* essere lunga 10 caratteri, con charset 0-9 A-F. 
 Questo è il formato delle password valide. Se così non fosse, semplicemente sarà
@@ -22,7 +28,7 @@ sicuramente non valida.
 
 ## Return ##
 
-La funzione restituisce true o false (stdbool.h)
+Le funzion restituiscono true o false (stdbool.h)
 
 
 ## Esempio ##

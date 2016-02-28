@@ -17,15 +17,20 @@
  * MA 02110-1301, USA.
  */
  
-/* DEPRECATED Questo file verrà rimosso nella prossima versione, è mantenuto solo
- * per compatibilità con la versione 1.x.x
- */ 
+/* Header a proposito della password rappresentata come int */
 
-# ifndef LIB_TPT_HEADER_H
-# define LIB_TPT_HEADER_H
+# include <stdbool.h>
 
 
-# include "filter_str.h"
+# ifndef LIB_TPT_HEADER_INT_H
+# define LIB_TPT_HEADER_INT_H
 
 
-# endif /* ifndef LIB_TPT_HEADER_H */
+/* La prima combinazione valida come password */
+# define FIRST_PASS 0x001011223A
+
+/* L'ultima combinazione valida come password */
+# define LAST_PASS 0xFFFFFFFDC9
+
+
+# endif /* ifndef LIB_TPT_HEADER_INT_H */

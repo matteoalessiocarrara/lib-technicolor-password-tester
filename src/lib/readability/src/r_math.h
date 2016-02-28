@@ -16,16 +16,15 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  */
- 
-/* DEPRECATED Questo file verrà rimosso nella prossima versione, è mantenuto solo
- * per compatibilità con la versione 1.x.x
- */ 
 
-# ifndef LIB_TPT_HEADER_H
-# define LIB_TPT_HEADER_H
+# include <math.h>
+
+# ifndef READABILITY_MATH_H
+# define READABILITY_MATH_H
 
 
-# include "filter_str.h"
+# define squareroot(double_x) sqrt(double_x)
+# define power(double_base, double_exponent) pow(double_base, double_exponent)
 
 
-# endif /* ifndef LIB_TPT_HEADER_H */
+# endif /* READABILITY_MATH_H */

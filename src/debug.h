@@ -17,12 +17,11 @@
  * MA 02110-1301, USA.
  */
 
-# include "header.h"
-
 # ifndef DEBUG_H
 # define DEBUG_H
 
 /* FIXME È brutto da vedere :( */
+/* TODO Creare repo separato */
 
 # ifdef DEBUG
 # include <stdio.h>

@@ -16,16 +16,18 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  */
- 
-/* DEPRECATED Questo file verrà rimosso nella prossima versione, è mantenuto solo
- * per compatibilità con la versione 1.x.x
- */ 
 
-# ifndef LIB_TPT_HEADER_H
-# define LIB_TPT_HEADER_H
+# include <string.h>
+
+# ifndef READABILITY_STRING_H
+# define READABILITY_STRING_H
 
 
-# include "filter_str.h"
+# define str_compare(str1, str2) strcmp(str1, str2)
+# define str_copy(src, dest) strcpy(dest, src)
+# define str_append(src, dest) strcat(dest, src)
+# define str_find(needle, haystack) strstr(haystack, needle)
+# define str_len(str) strlen(str)
 
 
-# endif /* ifndef LIB_TPT_HEADER_H */
+# endif /* READABILITY_STRING_H */

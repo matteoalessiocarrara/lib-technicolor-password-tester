@@ -17,15 +17,14 @@
  * MA 02110-1301, USA.
  */
  
-/* DEPRECATED Questo file verrà rimosso nella prossima versione, è mantenuto solo
- * per compatibilità con la versione 1.x.x
- */ 
+# include <stdlib.h>
+# include "r_string.h"
 
-# ifndef LIB_TPT_HEADER_H
-# define LIB_TPT_HEADER_H
-
-
-# include "filter_str.h"
+# ifndef READABILITY_STDLIB_H
+# define READABILITY_STDLIB_H
 
 
-# endif /* ifndef LIB_TPT_HEADER_H */
+# define str_toint(str) atoi(str)
+
+
+# endif /* READABILITY_STDLIB_H */
